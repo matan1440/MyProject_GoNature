@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.WorkerServiceMenuController">
+   <children>
+      <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+            <Label style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="logOut1" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="49.0" prefWidth="125.0" styleClass="red_button" text="Log Out" />
+            <Label fx:id="lblTime" layoutX="810.0" layoutY="85.0" prefHeight="49.0" prefWidth="135.0" style="-fx-text-fill:#FFFFFF;" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="820.0" layoutY="65.0" style="-fx-font-size: 20.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-text-fill:#FFFFFF;" text="Label" />
+            <Label styleClass="Title_text" text="Service Menu">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn"  onAction="#clickMainMenu" style="-fx-pref-width: 130.0;" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnCreateSubscriber" onAction="#clickCreateSubscriber" style="-fx-pref-width: 130.0;" styleClass="blue_button" text="Create&#10;Subscriber" />
+         </children>
+      </VBox>
+      <Label fx:id="lblG" layoutX="230.0" layoutY="170.0" prefHeight="87.0" prefWidth="300.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; " text="Good morning" />
+      <Label fx:id="lblName" layoutX="490.0" layoutY="187.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; " text="Label" />
+      <Label layoutX="230.0" layoutY="270.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 24.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; " text="All information in the system is relevant only for park " />
+      <Label fx:id="lblParkName" layoutX="855.0" layoutY="270.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 24.0; -fx-font-weight:bold; -fx-font-family:System; fx-font-style: italic; " text="" />
+   </children>
+</AnchorPane>

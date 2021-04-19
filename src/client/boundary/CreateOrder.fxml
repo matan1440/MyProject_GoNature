@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.CreateOrderController">
+   <children>
+      <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+            <Label style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label styleClass="Title_text" text="Create order">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickLogOut" styleClass="red_button" text="Log Out" />
+         </children></AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font name="Book Antiqua" size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" style="-fx-font-size: 20;" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnCreateOrderMenu" mnemonicParsing="false" onAction="#clickCreateOrderMenu" style="-fx-font-size: 20;" styleClass="blue_button" text="Create&#10;Order" />
+            <Button fx:id="btnViewOrdersTable" mnemonicParsing="false" onAction="#btnViewOrdersTable" style="-fx-font-size: 20;" styleClass="blue_button" text="My&#10;Orders" />
+         </children>
+      </VBox>
+      <Label layoutX="224.0" layoutY="244.0" styleClass="labels" text="Park:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="304.0" prefHeight="32.0" prefWidth="82.0" styleClass="labels" text="Date:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="364.0" styleClass="labels" text="Time:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="424.0" styleClass="labels" text="Visitors amount:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="484.0" styleClass="labels" text="Email:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+       <Label layoutX="295.0" layoutY="484.0" style="-fx-text-fill:RED; -fx-font-weight: bold;" text="*">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboPark" layoutX="417.0" layoutY="245.0" onAction="#restWindow" prefWidth="185.0" />
+      <DatePicker fx:id="DatePicker" layoutX="418.0" layoutY="305.0" onAction="#restWindow" prefHeight="31.0" prefWidth="185.0" />
+      <ComboBox fx:id="comboTime" layoutX="417.0" layoutY="365.0" onAction="#restWindow" prefWidth="185.0" />
+      <ComboBox fx:id="comboAmount" layoutX="417.0" layoutY="425.0" onAction="#restWindow" prefWidth="185.0" />
+      <TextField fx:id="txtEmail" layoutX="418.0" layoutY="485.0" onAction="#restWindow" prefWidth="185.0" />
+      <Button fx:id="btnCreateOrder" layoutX="217.0" layoutY="559.0" mnemonicParsing="false" onAction="#clickCreateOrder" prefHeight="58.0" prefWidth="200.0" styleClass="regular_button_internal" text="Create order">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnterWatingList" layoutX="434.0" layoutY="542.0" mnemonicParsing="false" onAction="#clickEnterWitingList" styleClass="regular_button_internal" text="Enter to watinglist" visible="false" />
+      <Button fx:id="btnViewDates" layoutX="434.0" layoutY="594.0" mnemonicParsing="false" onAction="#viewOtherDates" styleClass="regular_button_internal" text="View other dates" visible="false" />
+      <TableView fx:id="openDates" layoutX="705.0" layoutY="172.0" prefHeight="386.0" prefWidth="200.0" visible="false">
+        <columns>
+          <TableColumn fx:id="dates" prefWidth="199.0" text="Open Dates" />
+        </columns>
+      </TableView>
+      <Label layoutX="217.0" layoutY="147.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; " text="Please enter details" />
+   </children>
+</AnchorPane>

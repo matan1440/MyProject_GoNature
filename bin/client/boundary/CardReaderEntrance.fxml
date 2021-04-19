@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.CardReaderEntranceController">
+   <children>
+      <AnchorPane prefHeight="127.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="195.0" prefHeight="70.0" prefWidth="183.0" style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 30;" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="169.0" layoutY="64.0" prefHeight="65.0" prefWidth="262.0" style="-fx-text-fill: rgba(178, 230, 212, 1);" text="Quick entry">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="lblID" layoutX="33.0" layoutY="152.0" prefHeight="32.0" prefWidth="202.0" text="ID / Subscriber ID:">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" layoutX="251.0" layoutY="152.0" prefHeight="31.0" prefWidth="148.0" />
+      <Button fx:id="scan" layoutX="430.0" layoutY="152.0" mnemonicParsing="false" onAction="#ScanCard" styleClass="CR_button_internal" text="Scan" />
+      <Button fx:id="clear" layoutX="511.0" layoutY="152.0" mnemonicParsing="false" onAction="#ClearInfo" styleClass="CR_button_internal" text="Clear" />
+      <Label fx:id="lblPark" layoutX="35.0" layoutY="201.0" text="Park:">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboPark" layoutX="251.0" layoutY="201.0" onAction="#resetWindow" prefWidth="148.0" />
+      <Label fx:id="lblorder" layoutX="35.0" layoutY="265.0" text="Order ID:" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboOrders" layoutX="250.0" layoutY="257.0" prefWidth="150.0" visible="false" />
+      <Label fx:id="lblAmount" layoutX="35.0" layoutY="315.0" text="Visitors Amount:" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboAmount" layoutX="250.0" layoutY="307.0" onAction="#calcPrice" prefWidth="150.0" visible="false" />
+      <Label fx:id="lblBefore" layoutX="195.0" layoutY="296.0" text="Full Price:" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSumBefore" layoutX="347.0" layoutY="296.0" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDiscount" layoutX="195.0" layoutY="331.0" text="Discount:" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSumDiscount" layoutX="347.0" layoutY="331.0" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" layoutX="195.0" layoutY="366.0" text="Total Price:" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSum" layoutX="347.0" layoutY="366.0" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCapicity" layoutX="336.0" layoutY="482.0" mnemonicParsing="false" onAction="#checkAccess" prefHeight="47.0" prefWidth="222.0" style="-fx-font-size: 24.0;" styleClass="CR_button_internal" text="Access Check" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnter" layoutX="169.0" layoutY="157.0" mnemonicParsing="false" onAction="#clickEnter" prefHeight="86.0" prefWidth="262.0" style="-fx-font-size:30.0" styleClass="CR_button_internal" text="Enter" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="25.0" layoutY="482.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="47.0" prefWidth="110.0" styleClass="red_button_internal " text="Back" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

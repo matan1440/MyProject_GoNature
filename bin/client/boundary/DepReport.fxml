@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.DepReportController">
+   <children>
+      <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="49.0" prefWidth="125.0" styleClass="red_button" text="Log Out" />
+            <Label fx:id="lblDate" layoutX="820.0" layoutY="65.0" style="-fx-font-size: 20.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-text-fill:#FFFFFF;" text="Label" />
+            <Label fx:id="lblTime" layoutX="810.0" layoutY="85.0" prefHeight="49.0" prefWidth="135.0" style="-fx-text-fill:#FFFFFF;" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label styleClass="Title_text" text="Reports Page">
+               <font>
+                  <Font size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnReports" mnemonicParsing="false" onAction="#CreateReportsAction" styleClass="blue_button" text="Create&#10;Reports" />
+            <Button fx:id="btnConfirmDiscounts" mnemonicParsing="false" onAction="#ConfirmDiscounts" styleClass="blue_button" text="Confirm&#10;Discounts" />
+            <Button fx:id="btnConfirmParemters" mnemonicParsing="false" onAction="#ConfirmParemters" styleClass="blue_button" text="Confirm&#10;Paremters" />
+         </children>
+      </VBox>
+            <Label layoutX="250.0" layoutY="184.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-underline: true;" text="Please select one of the reports " />
+      <Button fx:id="btnCancellationReport" layoutX="250.0" layoutY="254.0" mnemonicParsing="false" onAction="#CancellationReport" styleClass="regular_button_internal" text="Cancellation Report" />
+      <Button fx:id="btnVisitsReport" layoutX="250.0" layoutY="314.0" mnemonicParsing="false" onAction="#VisitsReport" styleClass="regular_button_internal" text="Visits Report" />
+      <Button fx:id="btnStayingReport" layoutX="250.0" layoutY="374.0" mnemonicParsing="false" onAction="#StayingReport" styleClass="regular_button_internal" text="Staying Report" />
+   </children>
+</AnchorPane>

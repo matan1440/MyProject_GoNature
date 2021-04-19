@@ -1,0 +1,10 @@
+client
+client.common
+client.controllers
+client.logic
+ocsf.client
+ocsf.server
+server
+server.common
+server.controllers
+server.database

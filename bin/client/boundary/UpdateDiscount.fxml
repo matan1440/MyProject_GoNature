@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.UpdateDiscountController">
+   <children>
+         <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+
+            <Label styleClass="Title_text" text="Update Discount">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+             <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="49.0" prefWidth="125.0" styleClass="red_button" text="Log Out" />
+            <Label fx:id="lblTime" layoutX="810.0" layoutY="85.0" prefHeight="49.0" prefWidth="135.0" style="-fx-text-fill:#FFFFFF;" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnUpdateParemters1" mnemonicParsing="false" onAction="#updateParametersAction" styleClass="blue_button" text="Update&#10;Paremters" />
+            <Button fx:id="btnReports" mnemonicParsing="false" onAction="#CreateReportsAction" styleClass="blue_button" text="Create&#10;Reports" />
+            <Button fx:id="btnUpdateDiscount1" mnemonicParsing="false" onAction="#UpdateDiscountAction" styleClass="blue_button" text="Update&#10;Discount" />
+         </children>
+      </VBox>
+     
+      <Label style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1988d7" />
+                  <Stop color="LAWNGREEN" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+       <Label fx:id="lblDate" layoutX="820.0" layoutY="65.0" style="-fx-font-size: 20.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-text-fill:#FFFFFF;" text="Label" />
+<Label fx:id="lblStatus" layoutX="400.0" layoutY="512.0" prefHeight="31.0" prefWidth="500.0" style="-fx-text-fill: red; -fx-font-weight:bold;" text="" />
+<Button fx:id="btnupdateDiscount" layoutX="300.0" layoutY="429.0" mnemonicParsing="false" onAction="#updateDiscount" prefHeight="59.0" styleClass="regular_button_internal" text="Update Discount" />
+<DatePicker fx:id="DataTo" layoutX="431.0" layoutY="374.0" prefWidth="150.0" />
+<Text fx:id="lblToDiscount" layoutX="279.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="To:" />
+ <Label layoutX="407.0" layoutY="379.0" style="-fx-text-fill:RED; -fx-font-weight: bold;" text="*" />
+<DatePicker fx:id="DateFrom" layoutX="431.0" layoutY="325.0" prefWidth="150.0" />
+<Text fx:id="lblFromDiscount" layoutX="279.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="From:" />
+ <Label layoutX="407.0" layoutY="330.0" style="-fx-text-fill:RED; -fx-font-weight: bold;" text="*" />
+<TextField fx:id="txtUpdateDiscount" layoutX="431.0" layoutY="276.0" prefHeight="31.0" prefWidth="150.0" />
+<Text fx:id="lblDiscount" layoutX="279.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="Discount (%):" />
+  <Label layoutX="407.0" layoutY="282.0" style="-fx-text-fill:RED; -fx-font-weight: bold;" text="*" />
+      <Label fx:id="lblinformationPark" layoutX="279.0" layoutY="175.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System; fx-font-style: italic; -fx-underline: true;" text="Update Discount to park    " />
+      <Label fx:id="lblParkName" layoutX="712.0" layoutY="175.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System; fx-font-style: italic; " text="" />
+
+   </children>
+</AnchorPane>

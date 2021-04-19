@@ -1,0 +1,387 @@
+ #frame{
+    -fx-background-color: linear-gradient(to bottom, #1B2A41, #324A5F);
+}
+#Regular_button:hover {
+    -fx-background-color: #EEEEEE;
+}
+#Regular_button:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-font-weight: 900;
+}
+#frameup{
+    -fx-background-color: #1B2A41;
+}
+#main{
+	-fx-background-color: #EDF5FC;
+}
+
+
+#logout {
+	-fx-background-color: #cc0000;
+ 	-fx-background-radius: 25.0;
+ 	-fx-font-weight: bold;
+ 	-fx-text-fill: white;
+}
+#logout:hover {
+    -fx-background-color: #ff3333;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+#logout:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-font-weight: 900;
+}
+#Regular_button {
+    -fx-background-color: #FEFEFE;
+    -fx-background-radius: 25.0;
+    -fx-font-weight: bold;
+}
+#Regular_button:hover {
+    -fx-background-color: #EEEEEE ;
+}
+#Regular_button:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-font-weight: 900;
+}
+#Order_tool {
+	-fx-background-color: #5C6C78;
+ 	-fx-background-radius: 8;
+ 	-fx-text-fill: #DCDCDD;
+ 	-fx-font-weight: bold;
+}
+#Order_tool:hover {
+    -fx-background-color: #1985A1;
+}
+#Order_tool:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-font-weight: 900;
+}
+#customer_tool {
+	-fx-background-color: #5C6C78;
+ 	-fx-background-radius: 8;
+ 	-fx-text-fill: #DCDCDD;
+ 	-fx-font-weight: bold;
+}
+#customer_tool:hover {
+    -fx-background-color: #1985A1;
+}
+#customer_tool:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-font-weight: 900;
+}
+#ordersdetails{
+	-fx-background-image: url('/FuelGas.png');
+}
+#deactive_btn {
+    -fx-background-color: #FEFEFE;
+    -fx-background-radius: 25.0;
+    -fx-font-weight: bold;
+}
+#deactive_btn:hover {
+    -fx-background-color: #DF0000 ;
+}
+#deactive_btn:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-font-weight: 900;
+}
+#active_btn {
+    -fx-background-color: #FEFEFE;
+    -fx-background-radius: 25.0;
+    -fx-font-weight: bold;
+}
+#active_btn:hover {
+    -fx-background-color: #00CC00 ;
+}
+#active_btn:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-font-weight: 900;
+}
+.table-view .column-header-background{
+    -fx-background-color:  #b2e6d4;
+}
+.table-view .column-header-background .label{
+    -fx-background-color:  #b2e6d4;
+    -fx-text-fill: white;
+}
+.table-view .table-row-cell{
+	-fx-font-weight: 900;	
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.combo-box {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #A0a0a0;
+	-fx-border-width: 2,2,2,2;
+}
+
+.red_button {
+	-fx-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-fx-background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	-fx-background-color:#f24537;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-color:#ffffff;
+	-fx-font-family:Arial;
+	-fx-font-size:10px;
+	-fx-font-weight:bold;
+	-fx-padding:6px 24px;
+	-fx-text-decoration:none;
+	-fx-background-radius: 30;
+	-fx-background-insets: 0;
+	-fx-text-fill: white;
+	-fx-font-size: 14;
+	-fx-pref-height: 49.0;
+	-fx-pref-width: 125.0;
+	-fx-translate-x: 820;
+	-fx-translate-y: 10.0;
+}
+.red_button:hover {
+	-fx-background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	-fx-background-color:#c62d1f;
+	-fx-translate-y: 19.0;	
+}
+.red_button:active {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+
+
+.blue_button {
+	-fx-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-fx-background-color:#66cdaa;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-color:#ffffff;
+	-fx-font-family:Arial;
+	-fx-font-size:15px;
+	-fx-font-weight:bold;
+	-fx-padding:6px 24px;
+	-fx-text-decoration:none;
+	-fx-background-radius: 30;
+	-fx-background-insets: 0;
+	-fx-text-fill: white;
+	-fx-font-size: 14;
+	-fx-pref-height: 87.0;
+	-fx-pref-width: 120.0;
+	-fx-translate-x: 40;
+	-fx-translate-y: 10;
+}
+.blue_button:hover {
+	-fx-background-color:rgba(0, 128, 128, 0.5);
+	-fx-translate-x: 42;
+	-fx-translate-y: 12;
+
+	
+}
+.blue_button:active  {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+
+
+.red_button_internal {
+	-fx-box-shadow:inset 0px 1px 0px 0px #ff6666;
+	-fx-background-color:#ff1919;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-color:#ffffff;
+	-fx-font-family:Arial;
+	-fx-font-size:15px;
+	-fx-font-weight:bold;
+	-fx-padding:6px 24px;
+	-fx-text-decoration:none;
+	-fx-background-radius: 30;
+	-fx-background-insets: 0;
+	-fx-text-fill: white;
+	-fx-font-size: 25;
+	
+
+}
+.red_button_internal:hover {
+	-fx-background-color:rgba(255, 0, 0, 0.5);
+	-fx-translate-x: 5;
+	-fx-translate-y: 5;
+	
+}
+.red_button_internal:active  {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+
+.regular_button_internal {
+	-fx-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-fx-background-color:#b2e6d4;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-color:#ffffff;
+	-fx-font-family:Arial;
+	-fx-font-size:15px;
+	-fx-font-weight:bold;
+	-fx-padding:6px 24px;
+	-fx-text-decoration:none;
+	-fx-background-radius: 30;
+	-fx-background-insets: 0;
+	-fx-text-fill: white;
+	-fx-font-size: 25;
+
+}
+.regular_button_internal:hover {
+	-fx-background-color:rgba(0, 128, 128, 0.5);
+	-fx-translate-x: 5;
+	-fx-translate-y: 5;	
+}
+.regular_button_internal:active  {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+
+
+.Title_background {
+	-fx-background-color: linear-gradient(from 55px 55px to 100px 100px, #66cdaa, #b2e6d4);	
+	-fx-pref-width: 960.0;
+}
+
+.Title_text {
+	-fx-text-fill: #FFFFFF;
+	-fx-translate-x: 180.0;
+	-fx-translate-y: 18.0;
+	-fx-font-weight:bold;
+}
+
+.vBox {
+	-fx-background-color: linear-gradient(from 0px 0px to 40px 40px, #66cdaa, #b2e6d4);
+	-fx-spacing: 20.0;
+	-fx-pref-height: 650.0;
+	-fx-pref-width: 185.0
+	
+}
+
+.background {
+	-fx-background-color: #FFFFFF;
+}
+
+.label_Menu{
+	
+	-fx-font-family:System;
+	-fx-font-weight:bold;
+	-fx-font-size: 30;
+	-fx-text-fill:#FFFFFF;
+	-fx-underline: true;
+	-fx-translate-x: 60;
+	-fx-translate-y: 10;
+	
+}
+
+.logo_location {
+	
+		-fx-pref-height: 103.0;
+		-fx-pref-width: 183.0;
+		-fx-translate-x: 10.0;
+		-fx-translate-y: 8.0;
+}
+
+.labels {
+		-fx-font-weight:bold;
+		-fx-font-family:system;
+		-fx-font-size: 18;
+}
+.labels:hover {
+	-fx-font-size: 22;
+	-fx-font-weight:bold;
+}
+
+
+.Question_Mark {
+	-fx-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-fx-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-fx-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-fx-background-color:#fe1a00;
+	-fx--webkit-border-radius:100px;
+	-fx-moz-border-radius:100px;
+	-fx-border-radius:100px;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-text-fill:#ffffff;
+	-fx-font-family:Arial;
+	-fx-font-size:15px;
+	-fx-font-weight:bold;
+	-fx-padding:10px 10px;
+	-fx-text-decoration:none;
+}
+.Question_Mark:hover {
+	-fx-background-color:#ce0100;
+}
+.Question_Mark:active {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+
+.QuickEnter {
+	-fx-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-fx-background-color:#66cdaa;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-color:#ffffff;
+	-fx-font-family:Arial;
+	-fx-font-size:15px;
+	-fx-font-weight:bold;
+	-fx-padding:6px 24px;
+	-fx-text-decoration:none;
+	-fx-background-radius: 100;
+	-fx-pref-width: 100.0;
+	-fx-background-insets: 0;
+	-fx-text-fill: white;
+	-fx-font-size: 14;
+	-fx-pref-height: 100.0;
+
+
+}
+.QuickEnter:hover {
+	-fx-background-color:rgba(0, 128, 128, 0.5);
+	-fx-translate-x: 5;
+	-fx-translate-y: 5;
+
+	
+}
+.QuickEnter:active  {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+
+.CR_button_internal {
+	-fx-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-fx-background-color:#b2e6d4;
+	-fx-display:inline-block;
+	-fx-cursor:pointer;
+	-fx-color:#ffffff;
+	-fx-font-family:Arial;
+	-fx-font-size:15px;
+	-fx-font-weight:bold;
+	-fx-text-decoration:none;
+	-fx-background-radius: 30;
+	-fx-background-insets: 0;
+	-fx-text-fill: white;
+
+}
+.CR_button_internal:hover {
+	-fx-background-color:rgba(0, 128, 128, 0.5);
+	-fx-translate-x: 5;
+	-fx-translate-y: 5;	
+}
+.CR_button_internal:active  {
+	-fx-position:relative;
+	-fx-top:1px;
+}
+ 
+        

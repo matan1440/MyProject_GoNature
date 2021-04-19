@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ConfirmParametersController">
+   <children>
+      <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+            <Label prefHeight="47.0" prefWidth="180.0" style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="lblDate" layoutX="820.0" layoutY="65.0" style="-fx-font-size: 20.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-text-fill:#FFFFFF;" text="Label" />
+            <Label fx:id="lblTime" layoutX="810.0" layoutY="85.0" prefHeight="49.0" prefWidth="135.0" style="-fx-text-fill:#FFFFFF;" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label styleClass="Title_text" text="Confirm Parameters">
+               <font>
+                  <Font size="47.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickLogOut" styleClass="red_button" text="Log Out" />
+         </children>
+      </AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnReports" mnemonicParsing="false" onAction="#CreateReportsAction" styleClass="blue_button" text="Create&#10;Reports" />
+            <Button fx:id="btnConfirmDiscounts" mnemonicParsing="false" onAction="#ConfirmDiscounts" styleClass="blue_button" text="Confirm&#10;Discounts" />
+            <Button fx:id="btnConfirmParemters" mnemonicParsing="false" onAction="#ConfirmParemters" styleClass="blue_button" text="Confirm&#10;Paremters" />
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="OLDLACE" height="164.0" layoutX="481.0" layoutY="327.0" stroke="TRANSPARENT" strokeType="INSIDE" width="215.0" />
+       <Label layoutX="253.0" layoutY="150.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-underline: true;" text="Please select the park: " />
+      <TextField fx:id="txtCMaxVisitors" editable="false" layoutX="491.0" layoutY="350.0" prefHeight="31.0" prefWidth="80.0" />
+      <TextField fx:id="txtCVisitingTime" editable="false" layoutX="491.0" layoutY="393.0" prefHeight="31.0" prefWidth="80.0" />
+      <TextField fx:id="txtCMaxOrders" editable="false" layoutX="491.0" layoutY="439.0" prefHeight="31.0" prefWidth="80.0" />
+      <Label fx:id="lblStatus" layoutX="492.0" layoutY="570.0" prefHeight="31.0" prefWidth="302.0" styleClass="labels" text="" />
+      <Button fx:id="btnShowRequests" layoutX="620.0" layoutY="224.0" mnemonicParsing="false" onAction="#ShowRequests" styleClass="regular_button_internal" text="Show Requests" />
+      <Text layoutX="579.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="-&gt;" />
+      <Text layoutX="579.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="-&gt;" />
+      <Text layoutX="579.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="-&gt;" />
+      <TextField fx:id="txtNMaxVisitors" editable="false" layoutX="604.0" layoutY="349.0" prefHeight="31.0" prefWidth="80.0" />
+      <TextField fx:id="txtNVisitingTime" editable="false" layoutX="604.0" layoutY="392.0" prefHeight="31.0" prefWidth="80.0" />
+      <TextField fx:id="txtNMaxOrders" editable="false" layoutX="603.0" layoutY="441.0" prefHeight="31.0" prefWidth="80.0" />
+      <Text layoutX="506.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="Current" />
+      <Text layoutX="628.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labels" text="New" />
+      <Button fx:id="btnConfirmParameters" layoutX="490.0" layoutY="501.0" mnemonicParsing="false" onAction="#ConfirmParameters" styleClass="regular_button_internal" text="Yes" />
+      <Button fx:id="btnDeclineParameters" layoutX="603.0" layoutY="501.0" mnemonicParsing="false" onAction="#DeclineParameters" styleClass="regular_button_internal" text="No" />
+      <CheckBox fx:id="chkMaxVisitors" layoutX="273.0" layoutY="353.0" mnemonicParsing="false" onAction="#MaxVisitors" styleClass="labels" text="Max Visitors" />
+      <CheckBox fx:id="chkVisitingTime" layoutX="273.0" layoutY="395.0" mnemonicParsing="false" onAction="#VisitingTime" styleClass="labels" text="Visiting Time" />
+      <CheckBox fx:id="chkMaxOrders" layoutX="273.0" layoutY="444.0" mnemonicParsing="false" onAction="#MaxOrders" styleClass="labels" text="Max Orders" />
+      <ComboBox fx:id="comBoxParkName" layoutX="330.0" layoutY="224.0" prefWidth="150.0" />
+      <Label layoutX="270.0" layoutY="229.0" styleClass="labels" text="Park:" />
+      <Line endX="95.0" layoutX="587.0" layoutY="327.0" startX="-92.0" style=" -fx-stroke:#66cdaa;" />
+   </children>
+</AnchorPane>

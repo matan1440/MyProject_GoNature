@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="427.0" prefWidth="353.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.controllers.ServerPortFrameController">
+   <children>
+      <Button fx:id="btnDone" layoutX="101.0" layoutY="184.0" mnemonicParsing="false" onAction="#Done" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #40E0D0;" text="Done" textFill="WHITE" />
+      <TextField fx:id="portxt" layoutX="101.0" layoutY="127.0" prefHeight="42.0" prefWidth="160.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="btnExit" layoutX="186.0" layoutY="184.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #40E0D0;" text="Exit" textFill="WHITE" />
+      <Label layoutX="84.0" layoutY="77.0" text="Please enter port:">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="128.0" layoutY="26.0" text="Server">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="242.0" text="Times">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="304.0" text="Waiting List - Mins:" />
+      <Label layoutX="30.0" layoutY="362.0" text="Confirm Visit - Mins:" />
+      <TextField fx:id="WaitingListTime" layoutX="213.0" layoutY="304.0" prefHeight="31.0" prefWidth="111.0" text="60" />
+      <TextField fx:id="ConfirmVisitTime" layoutX="213.0" layoutY="358.0" prefHeight="31.0" prefWidth="111.0" text="120" />
+   </children>
+</Pane>

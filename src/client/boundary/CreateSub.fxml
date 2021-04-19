@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.CreateSubController">
+   <children>
+      <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+            <Label style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="logOut1" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="49.0" prefWidth="125.0" styleClass="red_button" text="Log Out" />
+            <Label fx:id="lblTime" layoutX="810.0" layoutY="85.0" prefHeight="49.0" prefWidth="135.0" style="-fx-text-fill:#FFFFFF;" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="820.0" layoutY="65.0" style="-fx-font-size: 20.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-text-fill:#FFFFFF;" text="Label" />
+            <Label  styleClass="Title_text"  text="Create Subscriber">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" style="-fx-pref-width: 130.0;"  styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnCreateSubscriber" mnemonicParsing="false" onAction="#clickCreateSubscriber" style="-fx-pref-width: 130.0;"  styleClass="blue_button" text="Create&#10;Subscriber" />
+         </children>
+      </VBox>
+      <TextField fx:id="txtLastName" layoutX="351.0" layoutY="303.0" />
+      <TextField fx:id="txtFirstName" layoutX="351.0" layoutY="253.0" />
+      <TextField fx:id="txtEmail" layoutX="351.0" layoutY="353.0" />
+      <TextField fx:id="txtAmount" layoutX="350.0" layoutY="451.0" />
+      <ComboBox fx:id="txtType" layoutX="353.0" layoutY="402.0" onAction="#ClickType" prefHeight="31.0" prefWidth="187.0" promptText="Choose" />
+      <Label layoutX="240.0" layoutY="257.0" style="-fx-font-weight:bold;" text="First name:" />
+      <Label layoutX="240.0" layoutY="307.0" style="-fx-font-weight:bold;" text="Last name:" />
+      <Button fx:id="btnCreate" layoutX="301.0" layoutY="532.0" mnemonicParsing="false" onAction="#clickCreate" styleClass="regular_button_internal" text="create subscriber" />
+      <Label layoutX="240.0" layoutY="357.0" style="-fx-font-weight:bold;" text="Email: " />
+      <Label layoutX="239.0" layoutY="455.0" style="-fx-font-weight:bold;" text="Amount:" />
+      <Label layoutX="241.0" layoutY="406.0" style="-fx-font-weight:bold;" text="Type: " />
+            <Label fx:id="lblG" layoutX="195.0" layoutY="143.0" prefHeight="87.0" prefWidth="413.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; " text="Create new subscriber" />
+   </children>
+</AnchorPane>

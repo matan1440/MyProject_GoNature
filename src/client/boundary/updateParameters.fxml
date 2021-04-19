@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.updateParametersController">
+   <children>
+      <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="49.0" prefWidth="82.0" styleClass="red_button" text="Log Out" />
+            <Label styleClass="Title_text" text="Update Parameters">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="lblTime" layoutX="810.0" layoutY="85.0" prefHeight="49.0" prefWidth="135.0" style="-fx-text-fill:#FFFFFF;" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="820.0" layoutY="65.0" style="-fx-font-size: 20.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-text-fill:#FFFFFF;" text="Label" />
+         </children>
+      </AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnUpdateParemters1" mnemonicParsing="false" onAction="#updateParametersAction" styleClass="blue_button" text="Update&#10;Paremters" />
+            <Button fx:id="btnReports" mnemonicParsing="false" onAction="#CreateReportsAction" styleClass="blue_button" text="Create&#10;Reports" />
+            <Button fx:id="btnUpdateDiscount1" mnemonicParsing="false" onAction="#UpdateDiscountAction" styleClass="blue_button" text="Update&#10;Discount" />
+         </children>
+      </VBox>
+      <TextField fx:id="txtMaxVisitors" layoutX="528.0" layoutY="303.0" />
+      <TextField fx:id="txtVisitingTime" layoutX="528.0" layoutY="348.0" />
+      <Button fx:id="btnSendRequest" layoutX="300.0" layoutY="450.0" mnemonicParsing="false" onAction="#SendRequest" prefHeight="59.0" styleClass="regular_button_internal" text="Send Request" />
+      <TextField fx:id="txtMaxOrders" layoutX="528.0" layoutY="398.0" />
+      <CheckBox fx:id="chkMaxVisitor" layoutX="280.0" layoutY="300.0" mnemonicParsing="false" onAction="#chkMaxVisitorAction" styleClass="labels" text="Maximum Visitor's" />
+      <CheckBox fx:id="chkVisitingTime" layoutX="280.0" layoutY="345.0" mnemonicParsing="false" onAction="#chkVisitingTimeAction" styleClass="labels" text="Visiting time" />
+      <CheckBox fx:id="chkMaxOrders" layoutX="280.0" layoutY="395.0" mnemonicParsing="false" onAction="#chkMaxOrdersAction" styleClass="labels" text="Maximum Orders" />
+      <Label fx:id="lblStatus" layoutX="300.0" layoutY="550.0" prefHeight="31.0" prefWidth="500.0" style="-fx-text-fill: black; -fx-font-weight:bold;" text="" />
+      <Label fx:id="lblinformationPark" layoutX="279.0" layoutY="175.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System; fx-font-style: italic; -fx-underline: true;" text="Update Parameters to park    " />
+      <Label fx:id="lblParkName" layoutX="750.0" layoutY="175.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System; fx-font-style: italic; " text="" />
+   </children>
+</AnchorPane>

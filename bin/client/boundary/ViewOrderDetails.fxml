@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="940.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ViewOrderDetailsController">
+   <children>
+      <AnchorPane prefHeight="116.0" prefWidth="960.0" styleClass="Title_background">
+         <children>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickLogOut" styleClass="red_button" text="Log Out" />
+            <Label prefHeight="81.0" prefWidth="470.0" styleClass="Title_text" text="View order details">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font name="Book Antiqua" size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" style="-fx-font-size: 20;" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnCreateOrder" mnemonicParsing="false" onAction="#clickCreateOrder" style="-fx-font-size: 20;" styleClass="blue_button" text="Create&#10;Order" />
+            <Button fx:id="btnViewOrdersTable" mnemonicParsing="false" onAction="#btnViewOrdersTable" style="-fx-font-size: 20;" styleClass="blue_button" text="My&#10;Orders" />
+         </children>
+      </VBox>
+      <Label layoutX="216.0" layoutY="206.0" prefHeight="32.0" prefWidth="105.0" styleClass="labels" text="Order ID:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="246.0" prefHeight="32.0" prefWidth="65.0" styleClass="labels" text="Park:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="286.0" prefHeight="32.0" prefWidth="74.0" styleClass="labels" text="Date:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="326.0" prefHeight="32.0" prefWidth="74.0" styleClass="labels" text="Time:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="206.0" prefHeight="32.0" prefWidth="196.0" styleClass="labels" text="Amount of visitor:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="246.0" prefHeight="32.0" prefWidth="105.0" styleClass="labels" text="Email:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="286.0" prefHeight="32.0" prefWidth="183.0" styleClass="labels" text="Owner ID:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="326.0" prefHeight="32.0" prefWidth="143.0" styleClass="labels" text="Type order:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="366.0" prefHeight="32.0" prefWidth="91.0" styleClass="labels" text="Status:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labOrderID" layoutX="363.0" layoutY="210.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labPrakName" layoutX="363.0" layoutY="250.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labDate" layoutX="363.0" layoutY="290.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labTime" layoutX="363.0" layoutY="330.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labAmount" layoutX="705.0" layoutY="206.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labEmail" layoutX="705.0" layoutY="246.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labOwnerOrder" layoutX="705.0" layoutY="286.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labType" layoutX="705.0" layoutY="326.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="labStatus" layoutX="363.0" layoutY="366.0" style="-fx-font-size: 18; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelOrder" layoutX="200.0" layoutY="552.0" mnemonicParsing="false" onAction="#ClickCancelOrder" prefHeight="59.0" prefWidth="215.0" styleClass="red_button_internal" text="Cancel order">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConfirmOrder" layoutX="687.0" layoutY="552.0" mnemonicParsing="false" onAction="#ClickConfirmOrder" prefHeight="59.0" prefWidth="219.0" styleClass="regular_button_internal" text="Confrim order" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="10.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#clickbtnBack" prefHeight="59.0" prefWidth="155.0" styleClass="red_button_internal" text="Back">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnArriveConfirm" layoutX="687.0" layoutY="552.0" mnemonicParsing="false" onAction="#ClickArriveConfirm" prefHeight="59.0" prefWidth="230.0" styleClass="regular_button_internal" text="Arrival Confirm" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="219.0" layoutY="427.0" prefHeight="55.0" prefWidth="219.0" style="-fx-font-weight: bold; -fx-font-size: 26; -fx-font-family:system;" text="Total Price:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="labprice" layoutX="366.0" layoutY="427.0" prefHeight="55.0" prefWidth="105.0" style="-fx-font-weight: bold; -fx-font-size: 26; -fx-font-family:system;" text="Label">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnpaynow" layoutX="473.0" layoutY="438.0" mnemonicParsing="false" onAction="#clickPayNow" prefHeight="39.0" prefWidth="165.0" styleClass="regular_button_internal" text="Pay Now" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="8.0" prefHeight="103.0" prefWidth="183.0" style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" text="GoNature">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1988d7" />
+                  <Stop color="LAWNGREEN" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="-11.0" endY="231.0" layoutX="499.0" layoutY="173.0" startX="-11.0" startY="35.0" />
+      <Label layoutX="216.0" layoutY="489.0" prefHeight="21.0" prefWidth="599.0" style="-fx-font-weight: bold; -fx-font-size: 18; -fx-font-family:system;" text="* The price is not final and may change at the time of billing.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="147.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; " text="Order Confirmation" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.AddVisitorController">
+   <children>
+      <AnchorPane prefHeight="116.0" styleClass="Title_background">
+         <children>
+            <Label style="-fx-font-family: Copperplate; -fx-font-weight: bold; -fx-font-size: 32;" styleClass="logo_location" text="GoNature">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1988d7" />
+                        <Stop color="LAWNGREEN" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="49.0" prefWidth="125.0" styleClass="red_button" text="Log Out" />
+            <Label fx:id="lblTime1" layoutX="810.0" layoutY="85.0" prefHeight="49.0" prefWidth="135.0" style="-fx-text-fill:#FFFFFF;" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate1" layoutX="820.0" layoutY="65.0" style="-fx-font-size: 20.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; -fx-text-fill:#FFFFFF;" text="Label" />
+            <Label fx:id="lblnumVis" layoutX="382.0" layoutY="92.0" style="-fx-font-size: 24.0;  -fx-font-weight:bold; " text="000" textFill="MEDIUMAQUAMARINE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="92.0" style="-fx-font-size: 24.0;  -fx-font-weight:bold; " text="Visitors in park:" textFill="MEDIUMAQUAMARINE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label styleClass="Title_text" text="ADD VISITOR">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <VBox layoutY="116.0" styleClass="vBox">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label styleClass="label_Menu" text="Menu">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="mainMenuBtn" mnemonicParsing="false" onAction="#clickMainMenu" styleClass="blue_button" text="Main&#10;Menu" />
+            <Button fx:id="btnOccasionalVisit" mnemonicParsing="false" onAction="#clickAddOccasional" styleClass="blue_button" text="random&#10;visitor" />
+            <Button fx:id="btnAddVisitor" layoutX="10.0" layoutY="224.0" mnemonicParsing="false" onAction="#clickAddVisitor" styleClass="blue_button" text="Add&#10;visitor" />
+            <Button fx:id="btnExit" mnemonicParsing="false" onAction="#clickExitVisit" styleClass="blue_button" text="Exit&#10;visitor" />
+         </children>
+      </VBox>
+      <TextField fx:id="txtOrderID" layoutX="377.0" layoutY="240.0" />
+      <Label layoutX="202.0" layoutY="238.0" prefHeight="21.0" prefWidth="177.0" style="-fx-font-weight:bold;" text="Check order ID:" />
+      <Button fx:id="btnSearch" layoutX="599.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickSearchID" styleClass="regular_button_internal" text="Search ID" />
+      <Label layoutX="202.0" layoutY="282.0" style="-fx-font-weight:bold;" text="Order ID:" />
+      <Label layoutX="202.0" layoutY="322.0" style="-fx-font-weight:bold;" text="Park name: " />
+      <Label layoutX="202.0" layoutY="362.0" style="-fx-font-weight:bold;" text="Date:" />
+      <Label layoutX="202.0" layoutY="402.0" style="-fx-font-weight:bold;" text="Time: " />
+      <Label layoutX="202.0" layoutY="442.0" style="-fx-font-weight:bold;" text="Number of visitors:" />
+      <Label layoutX="202.0" layoutY="482.0" style="-fx-font-weight:bold;" text="Email:" />
+      <Label layoutX="202.0" layoutY="522.0" style="-fx-font-weight:bold;" text="Owner ID:" />
+      <Label layoutX="202.0" layoutY="562.0" style="-fx-font-weight:bold;" text="Type of order:" />
+      <Label fx:id="lblOrderID" layoutX="389.0" layoutY="282.0" text="" />
+      <Label fx:id="lblParkName" layoutX="389.0" layoutY="322.0" text="" />
+      <Label fx:id="lblDate" layoutX="389.0" layoutY="362.0" text="" />
+      <Label fx:id="lblTime" layoutX="389.0" layoutY="402.0" text="" />
+      <Label fx:id="lblNumOfVistors" layoutX="389.0" layoutY="442.0" text="" />
+      <Label fx:id="lblEmail" layoutX="389.0" layoutY="482.0" text="" />
+      <Label fx:id="lblOwnerID" layoutX="389.0" layoutY="522.0" text="" />
+      <Label fx:id="lblType" layoutX="389.0" layoutY="562.0" text="" />
+      <Label fx:id="lblBefore" layoutX="542.0" layoutY="322.0" text="Full Price:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSumBefore" layoutX="764.0" layoutY="322.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDiscount" layoutX="543.0" layoutY="357.0" text="Discount:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSumDiscount" layoutX="764.0" layoutY="357.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" layoutX="543.0" layoutY="392.0" text="Total Price:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSum" layoutX="764.0" layoutY="392.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEnterTopark" layoutX="671.0" layoutY="503.0" mnemonicParsing="false" onAction="#clickEnterToPark" styleClass="regular_button_internal" text="Enter Visitor" visible="false" />
+      <Label fx:id="lblAmount" layoutX="542.0" layoutY="431.0" text="Visitors Amount:" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboAmount" layoutX="752.0" layoutY="432.0" prefWidth="150.0" visible="false" />
+      <Label fx:id="lblG" layoutX="202.0" layoutY="146.0" prefHeight="87.0" prefWidth="300.0" style="-fx-text-fill:#66cdaa; -fx-font-size: 36.0; -fx-font-weight:bold; -fx-font-family:System;  -fx-font-style: italic; " text="Search order" />
+   </children>
+</AnchorPane>
